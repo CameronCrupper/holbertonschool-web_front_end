@@ -962,29 +962,29 @@ textarea:valid:not(:placeholder-shown) {
     display: none;
 }
 
-.menu-btn:checked ~ .navbar-menu {
+input.menu-btn:checked + label + .navbar-menu {
     display: block;
 }
 
-.menu-btn:checked ~ .navbar-menu .nav {
+input.menu-btn:checked + label + .navbar-menu .nav {
     max-height: 100%;
     overflow: inherit;
 }
 
-.header .menu-btn:checked + .menu-icon .navicon {
+.header input.menu-btn:checked + label + .menu-icon .navicon {
     background: transparent;
 }
 
-.header .menu-btn:checked + .menu-icon .navicon::before {
+.header input.menu-btn:checked + label + .menu-icon .navicon::before {
     transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked + .menu-icon .navicon::after {
+.header input.menu-btn:checked + label + .menu-icon .navicon::after {
     transform: rotate(45deg);
 }
 
-.header .menu-btn:checked + .menu-icon .navicon::before,
-.header .menu-btn:checked + .menu-icon .navicon::after {
+.header input.menu-btn:checked + label + .menu-icon .navicon::before,
+.header input.menu-btn:checked + label + .menu-icon .navicon::after {
     top: 0;
 }
 
