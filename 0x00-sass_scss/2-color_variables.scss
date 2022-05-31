@@ -1,0 +1,16 @@
+/* assigns color to text and bg */
+$back_col: #6D6D6D;
+$text_col: #3D3D3D;
+
+body {
+  color: $text_col;
+  background-color: $back_col;
+}
+
+p {
+  color: $text_col;
+}
+
+h2 {
+  background-color: $back_col;
+}
