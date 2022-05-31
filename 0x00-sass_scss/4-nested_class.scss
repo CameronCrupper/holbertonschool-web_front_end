@@ -1,0 +1,10 @@
+/* Nested class */
+$in_body_color: #3D3D3D;
+$any_element_red: #FF0000;
+
+body {
+  color: $in_body_color;
+  .red {
+    color: $any_element_red;
+  }
+}
