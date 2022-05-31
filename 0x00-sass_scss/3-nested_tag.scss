@@ -1,0 +1,11 @@
+/* nESTED tAGS */
+$no_margorpad: 0px;
+$marg_pinbody: 10px;
+
+body {
+  margin: $no_margorpad;
+  padding: $no_margorpad;
+  p {
+    margin: $marg_pinbody;
+  }
+}
