@@ -1,0 +1,9 @@
+/* Nested Hover */
+$butt_tags: #FF0000;
+$hover_butt: #00FF00;
+button {
+  color: $butt_tags;
+  :hover {
+    color: $hover_butt;
+  }
+}
