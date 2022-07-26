@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+
+        <script type="application/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <script>
+            function createFamilyTree(container, data) {
+                var table = $("<table/>").addClass('CSSTableGenerator');
+    $.each(data, function(rowIndex, r) {
+        var row = $("<tr/>");
+        $.each(r, function(colIndex, c) {
+            row.append($("<t"+(rowIndex == 0 ?  "h" : "d")+"/>").text(c));
+        });
+        table.append(row);
+    });
+    return container.append(table);
+}
+
+$(document).ready(function() {
+    var data = [["Firstname", "Lastname"],
+                ["Guillaume", "Salva"],
+                ["Paulette", "Salva"],
+                ["Antoine", "Salva"]]
+    var maName = createFamilyTree($(document.body), data);
+});
+        </script>
+    </body>
+
+</html>
